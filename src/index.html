@@ -11,53 +11,54 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__wrapper">
-                <a class="logo" href="#">
+            <nav class="menu">
+                <a href="#" class="menu__logo">
                     <img src="icons/logo.svg" alt="logo">
                 </a>
-            </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Home +</a>
+                <ul class="menu__nav">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home + </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">About</a>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">About</a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Services</a>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Services</a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Pages +</a>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Pages +</a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">News</a>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">News</a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Contact</a>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Contact</a>
                     </li>
                 </ul>
-            </nav>
-            <div class="user-nav">
-                <button class="user-nav__search">
-                    <img src="icons/search.svg" alt="search">
-                </button>
-                <div class="user-nav__inner">
-                    <div class="user-nav__items">
-                        <a href="" class="user-nav__item">
-                            <img src="icons/like.svg" alt="like icon">
-                            <span class="user-nav__num">0</span>
-                        </a>
-                        <a href="" class="user-nav__item">
-                            <img src="icons/card.svg" alt="card icon">
-                            <span class="user-nav__num">0</span>
-                        </a>
-                    </div>
+                <div class="menu__user-nav">
+                    <button class="menu__search">
+                        <img src="icons/search.svg" alt="search icon">
+                    </button>
+                    <ul class="menu__user-btns">
+                        <li>
+                            <a href="" class="menu__btn-item menu__like">
+                                <img src="icons/like.svg" alt="like icon">
+                                <span class="menu__num">0</span>
+                            </a>
+                            <span class="menu__user-div"></span>
+                        </li>
+                        <li>
+                            <a href="" class="menu__btn-item menu__card">
+                                <img src="icons/card.svg" alt="card icon">
+                                <span class="menu__num">0</span>
+                            </a>
+                            </li>
+                    </ul>
+                    <button class="menu__more">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    </button>
                 </div>
-                <button class="user-nav__more">
-                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                </button>
-            </div>
+            </nav>
         </div>
     </header>
 

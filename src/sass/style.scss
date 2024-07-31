@@ -2,14 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 :root {
     --black: #000000;
     --white: #FFFFFF;
+    --second: #436372;
+    --grey-light : #edf1f4;
+    
+
 }
 
+ul, ol[class] {
+    list-style: none;
+}
+a[class] {
+    text-decoration: none;
+}
 
 @import 'base/*.scss';
 @import 'blocks/*.scss';
+  

@@ -1,0 +1,95 @@
+.menu {
+    padding: 52px 0 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav {
+        display: flex;
+    }
+    &__item + .menu__item {
+        margin-left: 32px;
+    }
+    &__link {
+        font-family: 'Rubik';
+        font-weight: 500;
+        color: var(--second);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__user-nav {
+        display: flex;
+        gap: 20px;
+    }
+    &__search {
+        width: 50px;
+        height: 50px;
+        background: var(--grey-light);
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__user-btns {
+        position: relative;
+        height: 50px;
+        padding: 0 40px;
+        padding-top: 6px;
+        background: #fcd7b6;
+        border-radius: 28px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 58px;
+    }
+    &__user-div {
+        position: absolute;
+        width: 1px;
+        height: 36px;
+        background: var(--white);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__btn-item {
+        position: relative;
+        cursor: pointer;
+    }
+    &__num {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -10px;
+        right: -12px;
+        width: 18px;
+        height: 18px;
+        background: var(--white);
+        border-radius: 50%;
+        font-family: 'DM Sans';
+        font-size: 10px;
+        font-weight: 400;
+    }
+    &__more {
+        width: 50px;
+        height: 50px;
+        display: grid;
+        grid-template: repeat(3, 5px) / repeat(3, 5px);
+        gap: 3px;
+        border: none;
+        border-radius: 50%;
+        justify-content: center;
+        align-content: center;
+        background: #a3bbc8;
+        cursor: pointer;
+        span {
+            display: block;
+            background: var(--white);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+}
