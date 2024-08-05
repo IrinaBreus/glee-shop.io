@@ -16,27 +16,17 @@
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_calcScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/calcScroll */ \"./src/js/modules/calcScroll.js\");\n/* harmony import */ var _modules_scrollUp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scrollUp */ \"./src/js/modules/scrollUp.js\");\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n'use stricti';\r\n\r\n(0,_modules_scrollUp__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n(0,_modules_calcScroll__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_copiryghtDate__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/copiryghtDate */ \"./src/js/modules/copiryghtDate.js\");\n// import calcScroll from './modules/calcScroll';\r\n// import scrollUp from './modules/scrollUp';\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n'use stricti';\r\n\r\n// scrollUp();\r\n// calcScroll();\r\n\r\n(0,_modules_copiryghtDate__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.footer-bottom__date');\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
 
 /***/ }),
 
-/***/ "./src/js/modules/calcScroll.js":
-/*!**************************************!*\
-  !*** ./src/js/modules/calcScroll.js ***!
-  \**************************************/
+/***/ "./src/js/modules/copiryghtDate.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/copiryghtDate.js ***!
+  \*****************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst calcScroll = () => {\r\n    let div = document.createElement('div');\r\n    div.style.width = '50px';\r\n    div.style.height = '50px';\r\n    div.style.overflowY = 'scroll';\r\n    div.style.visibility = 'hidden';\r\n    document.body.append(div);\r\n\r\n    let scrollWidth = div.offsetWidth - div.clientWidth;\r\n    div.remove();\r\n    return scrollWidth;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (calcScroll);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/calcScroll.js?");
-
-/***/ }),
-
-/***/ "./src/js/modules/scrollUp.js":
-/*!************************************!*\
-  !*** ./src/js/modules/scrollUp.js ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-eval("__webpack_require__.r(__webpack_exports__);\nconst scrollUp = () => {\r\n    const up = document.querySelector('.up');\r\n\r\n    up.addEventListener('click', function(e) {\r\n        e.preventDefault();\r\n        \r\n        window.scrollTo({\r\n            left: 0,\r\n            top: 0,\r\n            behavior: \"smooth\"\r\n        });\r\n    })\r\n\r\n    window.addEventListener('scroll', () => {\r\n        if (document.documentElement.scrollTop > 1000) {\r\n            up.style.cssText = `opacity: 1;\r\n                                cursor: pointer;`\r\n        } else {\r\n            up.style.cssText = `opacity: 0;\r\n                                cursor: none;`\r\n        }\r\n    })\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (scrollUp);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/scrollUp.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst copiryghtDate = (dateField) => {\r\n    const txt = document.querySelector(dateField);\r\n    const date = new Date().getFullYear();\r\n    \r\n    txt.innerHTML = `${date}`;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (copiryghtDate);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/copiryghtDate.js?");
 
 /***/ })
 
