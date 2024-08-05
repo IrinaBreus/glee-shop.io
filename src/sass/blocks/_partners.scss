@@ -1,0 +1,11 @@
+.partners {
+    // min-height: 268px;
+    background: var(--bg);
+    &__inner {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 94px 0 90px;
+    }
+}
