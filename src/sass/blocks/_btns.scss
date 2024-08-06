@@ -1,0 +1,20 @@
+.btn {
+    padding: 24px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #243f4d;
+    border-radius: 5px;
+    color: var(--second);
+    transition: all .3s;
+    &::after {
+        content: url('../icons/arrow-more.svg');
+    }
+    &_dark {
+        background: var(--bg-btn);
+        border: none;
+        color: var(--white);
+        &:hover {
+            background: #536a76;
+        }
+    }
+}
