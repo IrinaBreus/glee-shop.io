@@ -1,4 +1,5 @@
 .btn {
+    display: inline-block;
     padding: 24px 20px;
     font-size: 15px;
     font-weight: 500;
@@ -7,7 +8,11 @@
     color: var(--second);
     transition: all .3s;
     &::after {
-        content: url('../icons/arrow-more.svg');
+        content: url('../icons/arrow-dark.svg');
+        margin-left: 42px;
+    }
+    &:hover {
+        background: rgba(#fff, .4);
     }
     &_dark {
         background: var(--bg-btn);
@@ -15,6 +20,9 @@
         color: var(--white);
         &:hover {
             background: #536a76;
+        }
+        &::after {
+            content: url('../icons/arrow-white.svg');
         }
     }
 }

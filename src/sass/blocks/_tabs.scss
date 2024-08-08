@@ -1,0 +1,28 @@
+.tab {
+    &__lists {
+        display: flex;
+        justify-content: center;
+    }
+    &__list {
+        font-family: var(--sans);
+        font-size: 16px;
+        font-weight: 700;
+        color: #8b8b8b;
+        padding: 0 16px;
+        cursor: pointer;
+        &:hover {
+            color: var(--black);
+        }
+        &_active {
+            color: var(--black);
+        }
+    }
+    &__content {
+        display: grid;
+        column-gap: 30px;
+        &_4 {
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 40px;
+        }
+    }
+}

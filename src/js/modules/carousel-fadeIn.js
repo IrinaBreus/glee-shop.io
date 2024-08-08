@@ -38,6 +38,9 @@ const carouselFadeIn = () => {
                 dots[i].classList.add('header__carousel-dot_active');
                 index = slideTo;
             });
+            dot.addEventListener('mouseenter', () => {
+                clearInterval(timerID);
+            })
             dot.addEventListener('mouseleave', () => {
                 activateAnimation();
             })
