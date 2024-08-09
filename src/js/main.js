@@ -14,4 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
 copiryghtDate('.footer-bottom__date');
 carouselFadeIn();
 tabsFilter('.products__tabs');
+tabsFilter('.new-design__tabs');
 });

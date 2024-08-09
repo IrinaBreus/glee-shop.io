@@ -20,6 +20,10 @@
     &__content {
         display: grid;
         column-gap: 30px;
+        &_3 {
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 36px;
+        }
         &_4 {
             grid-template-columns: repeat(4, 1fr);
             row-gap: 40px;
