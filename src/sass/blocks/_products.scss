@@ -63,6 +63,18 @@
             }
         }
     }
+    &__item-title {
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--main-txt);
+        margin-bottom: 10px;
+    }
+    &__item-price {
+        font-family: var(--sans);
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--bg-btn);
+    }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -95,7 +107,7 @@
     &__card-descr {
         font-size: 16px;
         line-height: 30px;
-        color: #243f4d;
+        color: var(--main-txt);
         margin-bottom: 30px;
     }
     &__card-btn {

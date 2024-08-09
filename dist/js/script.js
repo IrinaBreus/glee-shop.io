@@ -16,7 +16,7 @@
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_carousel_fadeIn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/carousel-fadeIn */ \"./src/js/modules/carousel-fadeIn.js\");\n/* harmony import */ var _modules_copiryghtDate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/copiryghtDate */ \"./src/js/modules/copiryghtDate.js\");\n// import calcScroll from './modules/calcScroll';\r\n// import scrollUp from './modules/scrollUp';\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n'use stricti';\r\n\r\n// scrollUp();\r\n// calcScroll();\r\n\r\n(0,_modules_copiryghtDate__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('.footer-bottom__date');\r\n(0,_modules_carousel_fadeIn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_carousel_fadeIn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/carousel-fadeIn */ \"./src/js/modules/carousel-fadeIn.js\");\n/* harmony import */ var _modules_copiryghtDate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/copiryghtDate */ \"./src/js/modules/copiryghtDate.js\");\n/* harmony import */ var _modules_tabsFilter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/tabsFilter */ \"./src/js/modules/tabsFilter.js\");\n// import calcScroll from './modules/calcScroll';\r\n// import scrollUp from './modules/scrollUp';\r\n\r\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n'use stricti';\r\n\r\n// scrollUp();\r\n// calcScroll();\r\n\r\n(0,_modules_copiryghtDate__WEBPACK_IMPORTED_MODULE_1__[\"default\"])('.footer-bottom__date');\r\n(0,_modules_carousel_fadeIn__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n(0,_modules_tabsFilter__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('.products__tabs');\r\n});\n\n//# sourceURL=webpack://gulp-start/./src/js/main.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst carouselFadeIn = () => 
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\nconst copiryghtDate = (dateField) => {\r\n    const txt = document.querySelector(dateField);\r\n    const date = new Date().getFullYear();\r\n    \r\n    txt.innerHTML = `${date}`;\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (copiryghtDate);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/copiryghtDate.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/tabsFilter.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/tabsFilter.js ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst tabsFilter = (filterSection) => {\r\n    const filter = document.querySelector(filterSection),\r\n          btnsPanel = filter.querySelector('.tab__lists'),\r\n          btns = btnsPanel.querySelectorAll('.tab__list'),\r\n          contents = filter.querySelectorAll('.tab__item');\r\n\r\n    btnsPanel.addEventListener('click', (e) => {\r\n        hiddeContent();\r\n        contents.forEach(item => {\r\n            if (item.dataset.category == e.target.textContent) {\r\n                showContent(item, e);\r\n            }\r\n            if (e.target.textContent == 'All') {\r\n                showContent(item, e);\r\n            }\r\n        })\r\n        console.log(e.target.textContent);\r\n    })\r\n\r\n    function hiddeContent() {\r\n        contents.forEach(item => item.style.display = 'none');\r\n        btns.forEach(item => item.classList.remove('tab__list_active'));\r\n    }\r\n    function showContent(item, e) {\r\n        item.style.display = 'block';\r\n        e.target.classList.add('tab__list_active');\r\n    }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (tabsFilter);\n\n//# sourceURL=webpack://gulp-start/./src/js/modules/tabsFilter.js?");
 
 /***/ })
 

@@ -3,6 +3,7 @@
 
 import carouselFadeIn from "./modules/carousel-fadeIn";
 import copiryghtDate from "./modules/copiryghtDate";
+import tabsFilter from "./modules/tabsFilter";
 
 document.addEventListener('DOMContentLoaded', () => {
 'use stricti';
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 copiryghtDate('.footer-bottom__date');
 carouselFadeIn();
+tabsFilter('.products__tabs');
 });
