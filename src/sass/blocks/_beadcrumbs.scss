@@ -1,0 +1,30 @@
+.breadcrumbs {
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-right: 14px;
+        a:hover {
+            text-decoration: underline;
+        }
+        &::after {
+            content: ' / ';
+            display: inline;
+            margin-left: 12px;
+        }
+        &:last-child{
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+        
+    &__link {
+        font-size: 14px;
+        line-height: 24px;
+        color: #222933;
+    }
+    
+}

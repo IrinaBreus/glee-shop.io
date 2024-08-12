@@ -67,6 +67,15 @@
     &__carousel-dot_active {
         opacity: 1;
     }
+    &__page {
+        min-height: 126px;
+        background: var(--bg-btn);
+        padding: 36px 0 32px;
+        text-align: center;
+    }
+    &__page-title {
+        margin-bottom: 6px;
+    }
 }
 
 @keyframes fadeIn {
