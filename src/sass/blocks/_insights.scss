@@ -1,0 +1,96 @@
+.insights {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 456px, #fef7f0 456px);
+    padding-top: 118px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 42px;
+    }
+    &__link {
+        font-family: var(--sans);
+        font-size: 16px;
+        font-weight: 700;
+        color: #262626;
+        transition: all .7s;
+        padding: 4px 0;
+        border-bottom: 1px solid transparent;
+        &::after {
+            content: '';
+            background: url('../icons/arrow-all.svg');
+            width: 7px;
+            height: 12px;
+            display: inline-block;
+            margin-left: 18px;
+        }
+        &:hover {
+            border-bottom: 1px solid #262626;
+        }
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &__item {
+        border-radius: 10px;
+        background: var(--white);
+        overflow: hidden;
+    }
+    &__image {
+        display: block;
+        height: 250px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__descr {
+        padding: 40px 32px 28px;
+        position: relative;
+    }
+    &__news {
+        padding: 10px 32px;
+        position: absolute;
+        top: -20px;
+        left: 28px;
+        background: var(--bg-btn);
+        border-radius: 18px;
+        font-family: var(--poppins);
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--white);
+    }
+    &__txt {
+        display: block;
+        font-family: var(--sans);
+        font-size: 18px;
+        font-weight: 500;
+        color: #262626;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 20px;
+        min-height: 90px;
+    }
+    &__caption {
+        display: inline-block;
+        font-size: 12px;
+        color: #222933;
+        margin-right: 30px;
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+            object-fit: cover;
+            transform: translateY(3px);
+        }
+    }
+    &__caption-date::before {
+        background: url('../icons/range.svg');
+    }
+    &__caption-author::before {
+        background: url('../icons/author.svg');
+    }
+}
