@@ -16,7 +16,9 @@
         }
     }
     &__logo {
-        margin-bottom: 30px;
+        display: block;
+        padding-bottom: 14px;
+        cursor: pointer;
     }
     &__txt, a {
         font-size: 14px;

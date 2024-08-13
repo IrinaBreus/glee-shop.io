@@ -1,0 +1,27 @@
+.header__404-page, .footer__404-page {
+    background: var(--grey-light);
+}
+
+.page-404 {
+    padding: 100px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 30px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__txt {
+        margin-bottom: 60px;
+    }
+    &__img {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

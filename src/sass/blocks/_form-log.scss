@@ -1,0 +1,67 @@
+.log {
+    width: 472px;
+    margin: 0 auto;
+    padding: 122px 0;
+    font-size: 14px;
+    color: var(--second);
+    &__question {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__btn {
+        display: block;
+        width: 100%;
+        padding: 22px 0;
+        border: 2px solid var(--bg-btn);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--main-txt);
+    }
+}
+
+.form-log {
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 32px;
+    &_no-border {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 22px 14px;
+        border: 2px solid #f6f6f6;
+        margin: 14px 0 26px;
+        &:hover {
+            background: #f6f6f6;
+        }
+    }
+    &__btn {
+        width: 100%;
+        padding: 22px;
+        border: none;
+        background: var(--bg-btn);
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 34px;
+        cursor: pointer;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__descr {
+        margin-bottom: 24px;
+        line-height: 150%;
+    }
+    &__agree {
+        margin-bottom: 30px;
+    }
+}
