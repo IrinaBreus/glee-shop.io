@@ -3,6 +3,7 @@
 
 import carouselFadeIn from "./modules/carousel-fadeIn";
 import copiryghtDate from "./modules/copiryghtDate";
+import doubleRangeSlider from "./modules/rangeSlider";
 import tabsFilter from "./modules/tabsFilter";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,4 +16,5 @@ copiryghtDate('.footer-bottom__date');
 carouselFadeIn();
 tabsFilter('.products__tabs');
 tabsFilter('.new-design__tabs');
+doubleRangeSlider('.double-range-slider1');
 });

@@ -1,0 +1,11 @@
+.shop {
+    padding: 120px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 270px 1fr;
+        gap: 30px;
+    }
+    &__fiters, &__content {
+        width: 100%;
+    }
+}
