@@ -1,0 +1,27 @@
+.stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+
+    display: inline-block;
+    line-height: 1;
+    
+    &::before {
+        content: '★★★★★';
+        background: linear-gradient(90deg, #ffcc00 var(--percent), #d6d6d6 var(--percent));
+        background-clip: text;
+        color: transparent;
+    }
+    &_18 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        &::before {
+            letter-spacing: 3px;
+        }
+    }
+    &_28 {
+        font-size: 28px;
+        margin-bottom: 40px;
+        &::before {
+            letter-spacing: 12px;
+        }
+    }
+}

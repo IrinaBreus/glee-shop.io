@@ -8,4 +8,46 @@
     &__fiters, &__content {
         width: 100%;
     }
+    &__view-btns {
+        // width: 60%;
+        display: grid;
+        grid-template-columns: 1fr repeat(2, max-content);
+        column-gap: 20px;
+        text-align: right;
+        align-items: center;
+        margin-bottom: -30px;
+    }
+    &__view-btn {
+        width: 25px;
+        height: 25px;
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        path {
+            transition: all .6s;
+        }
+        &:hover {
+            path {
+                fill: #436372;
+            }
+        }
+    }
+    &__view-btn_active {
+        path {
+            fill: #243f4d;
+        }
+    }
+    &__cards {
+        display: grid;
+        gap: 40px 30px;
+        &_grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
 }

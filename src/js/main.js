@@ -4,6 +4,7 @@
 import carouselFadeIn from "./modules/carousel-fadeIn";
 import copiryghtDate from "./modules/copiryghtDate";
 import doubleRangeSlider from "./modules/rangeSlider";
+import showCard from "./modules/showCard";
 import tabsFilter from "./modules/tabsFilter";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 copiryghtDate('.footer-bottom__date');
 carouselFadeIn();
+doubleRangeSlider('.double-range-slider1');
+showCard('.products__content', 8);
+
+showCard('.shop__cards');
+
+
 tabsFilter('.products__tabs');
 tabsFilter('.new-design__tabs');
-doubleRangeSlider('.double-range-slider1');
 });

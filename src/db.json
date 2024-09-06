@@ -1,0 +1,100 @@
+{
+    "product" : [
+        {
+           "src": "img/product/1.jpg",
+           "title" : "Wooden radio",
+            "rate": "2",
+            "price": "29.00",
+            "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "category": "Furnitures"
+        },
+        {
+            "src": "img/product/2.jpg",
+            "title" : "Wooden chair",
+            "rate": "3",
+            "price": "29.00",
+            "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "category": "Chairs"
+        },
+        {
+            "src": "img/product/3.jpg",
+            "title" : "White chair",
+            "rate": "4",
+            "price": "29.00",
+            "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "category": "Lighting"
+        },
+        {
+            "src": "img/product/4.jpg",
+            "title" : "Retro table",
+            "rate": "5",
+            "price": "29.00",
+            "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "category": "Decor"
+        },
+        {
+            "src": "img/product/5.jpg",
+            "title" : "Wooden radio",
+             "rate": "4",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Furnitures"
+         },
+         {
+             "src": "img/product/6.jpg",
+             "title" : "Wooden chair",
+             "rate": "3",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Chairs"
+         },
+         {
+             "src": "img/product/7.jpg",
+             "title" : "White chair",
+             "rate": "4",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Lighting"
+         },
+         {
+             "src": "img/product/8.jpg",
+             "title" : "Retro table",
+             "rate": "5",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Decor"
+         },
+         {
+            "src": "img/product/9.jpg",
+            "title" : "Wooden radio",
+             "rate": "4",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Furnitures"
+         },
+         {
+             "src": "img/product/10.jpg",
+             "title" : "Wooden chair",
+             "rate": "3",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Chairs"
+         },
+         {
+             "src": "img/product/11.jpg",
+             "title" : "White chair",
+             "rate": "4",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Lighting"
+         },
+         {
+             "src": "img/product/12.jpg",
+             "title" : "Retro table",
+             "rate": "5",
+             "price": "29.00",
+             "descr": "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+             "category": "Decor"
+         }
+    ]
+}

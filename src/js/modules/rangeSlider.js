@@ -37,8 +37,8 @@ const doubleRangeSlider = (rangeSliderSection) => {
     
         // расчет положения tooltip и поля инпутов между ползунками
         function setArea() {
-            range.style.left = ((minVal.value / sliderMaxValue) * 100) + 5 + '%';
-            range.style.right = (100 - (maxVal.value / sliderMaxValue) * 100) + 5 + '%';
+            range.style.left = ((minVal.value / sliderMaxValue) * 100) + '%';
+            range.style.right = (100 - (maxVal.value / sliderMaxValue) * 100) + '%';
         }
     
     
