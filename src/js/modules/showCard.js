@@ -13,15 +13,19 @@ const showCard = (parentSelector, num = 12) => {
         .then(data => {
             createCard(data)
         
-            triggerList.addEventListener('click', () => {
-                triggerGrid.classList.remove('shop__view-btn_active');
-                triggerList.classList.add('shop__view-btn_active');
-                parent.classList.remove('shop__cards_grid');
-                parent.classList.add('shop__cards_list');
-                num = 4;
-                parent.innerHTML = '';
-                createCard(data);
-            
+            if (triggerList) {
+                triggerList.addEventListener('click', () => {
+                    triggerGrid.classList.remove('shop__view-btn_active');
+                    triggerList.classList.add('shop__view-btn_active');
+                    parent.classList.remove('shop__cards_grid');
+                    parent.classList.add('shop__cards_list');
+                    num = 4;
+                    parent.innerHTML = '';
+                    createCard(data);
+                });
+            };
+
+            if (triggerGrid) {
                 triggerGrid.addEventListener('click', () => {
                     triggerList.classList.remove('shop__view-btn_active');
                     triggerGrid.classList.add('shop__view-btn_active');
@@ -31,7 +35,7 @@ const showCard = (parentSelector, num = 12) => {
                     parent.innerHTML = '';
                     createCard(data);
                 });
-            });
+            }
         });
     
 
