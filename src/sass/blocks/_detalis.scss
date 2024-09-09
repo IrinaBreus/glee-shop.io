@@ -49,7 +49,46 @@
     }
     &__form {
         margin-bottom: 56px;
+        display: flex;
     }
+    
+    // стилизация input type="number" - num & input + inputNumber.js
+
+    &__num {
+        height: 58px;
+        max-width: 148px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--bg-btn);
+        span {
+            width: 48px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 45px;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+    &__input {
+        display: inline-block;
+        text-align: center;
+        width: 48px;
+        padding: 0 ;
+        line-height: 56px;
+        font-size: 15px;
+        border: none;
+        border-right: 1px solid var(--bg-btn);
+        border-left: 1px solid var(--bg-btn);
+        appearance: textfield;
+        -moz-appearance:textfield;
+        -webkit-appearance: textfield;
+        &::-webkit-outer-spin-button, 
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+    }
+
     &__form-btn {
         padding: 20px 52px;
         border-radius: 5px;
@@ -58,6 +97,7 @@
         color: var(--white);
         font-size: 15px;
         text-transform: uppercase;
+        margin-left: 15px;
         cursor: pointer;
         transition: all .7s;
         &:hover {

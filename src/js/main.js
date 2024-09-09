@@ -4,6 +4,7 @@
 import carouselFadeIn from "./modules/carousel-fadeIn";
 import copiryghtDate from "./modules/copiryghtDate";
 import detalisSlider from "./modules/detalisSlider";
+import inputNumber from "./modules/inputNumber";
 import doubleRangeSlider from "./modules/rangeSlider";
 import showCard from "./modules/showCard";
 import tabsFilter from "./modules/tabsFilter";
@@ -25,4 +26,5 @@ showCard('.shop__cards');
 tabsFilter('.products__tabs');
 tabsFilter('.new-design__tabs');
 detalisSlider();
+inputNumber();
 });
