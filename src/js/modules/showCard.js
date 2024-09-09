@@ -1,47 +1,145 @@
-import getResourse from "../services/request";
+// import getResourse from "../services/request";
+
+
+const products =  [
+    {
+        src: "img/product/1.jpg",
+        title : "Wooden radio",
+        rate: 2,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Furnitures"
+    },
+    {
+        src: "img/product/2.jpg",
+        title : "Wooden chair",
+        rate: 3,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Chairs"
+    },
+    {
+        src: "img/product/3.jpg",
+        title : "White chair",
+        rate: 4,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Lighting"
+    },
+    {
+        src: "img/product/4.jpg",
+        title : "Retro table",
+        rate: 5,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Decor"
+    },
+    {
+        src: "img/product/5.jpg",
+        title : "Wooden radio",
+        rate: 4,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Furnitures"
+    },
+    {
+        src: "img/product/6.jpg",
+        title : "Wooden chair",
+        rate: 3,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Chairs"
+    },
+    {
+        src: "img/product/7.jpg",
+        title : "White chair",
+        rate: 4,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Lighting"
+    },
+    {
+        src: "img/product/8.jpg",
+        title : "Retro table",
+        rate: 5,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Decor"
+    },
+    {
+        src: "img/product/9.jpg",
+        title : "Wooden radio",
+        rate: 4,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Furnitures"
+    },
+    {
+        src: "img/product/10.jpg",
+        title : "Wooden chair",
+        rate: 3,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Chairs"
+    },
+    {
+        src: "img/product/11.jpg",
+        title : "White chair",
+        rate: 4,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Lighting"
+    },
+    {
+        src: "img/product/12.jpg",
+        title : "Retro table",
+        rate: 5,
+        price: "29.00",
+        descr: "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        category: "Decor"
+    }
+]
 
 const showCard = (parentSelector, num = 12) => {
     // if (!parentSelector) return;
     try{
-    const parent = document.querySelector(parentSelector),
-          triggerList = document.querySelector('.shop__view-btn_list'),
-          triggerGrid = document.querySelector('.shop__view-btn_grid');
-    
-    parent.innerHTML = '';
-
-    getResourse()
-        .then(data => {
-            createCard(data)
+        const parent = document.querySelector(parentSelector),
+            triggerList = document.querySelector('.shop__view-btn_list'),
+            triggerGrid = document.querySelector('.shop__view-btn_grid');
         
-            if (triggerList) {
-                triggerList.addEventListener('click', () => {
-                    triggerGrid.classList.remove('shop__view-btn_active');
-                    triggerList.classList.add('shop__view-btn_active');
-                    parent.classList.remove('shop__cards_grid');
-                    parent.classList.add('shop__cards_list');
-                    num = 4;
-                    parent.innerHTML = '';
-                    createCard(data);
-                });
-            };
+        parent.innerHTML = '';
 
-            if (triggerGrid) {
-                triggerGrid.addEventListener('click', () => {
-                    triggerList.classList.remove('shop__view-btn_active');
-                    triggerGrid.classList.add('shop__view-btn_active');
-                    parent.classList.add('shop__cards_grid');
-                    parent.classList.remove('shop__cards_list');
-                    num = 12;
-                    parent.innerHTML = '';
-                    createCard(data);
-                });
-            }
-        });
+    // getResourse()
+    //     .then(data => {
+        createCard()
     
+        if (triggerList) {
+            triggerList.addEventListener('click', () => {
+                triggerGrid.classList.remove('shop__view-btn_active');
+                triggerList.classList.add('shop__view-btn_active');
+                parent.classList.remove('shop__cards_grid');
+                parent.classList.add('shop__cards_list');
+                num = 4;
+                parent.innerHTML = '';
+                createCard();
+            });
+        };
 
+        if (triggerGrid) {
+            triggerGrid.addEventListener('click', () => {
+                triggerList.classList.remove('shop__view-btn_active');
+                triggerGrid.classList.add('shop__view-btn_active');
+                parent.classList.add('shop__cards_grid');
+                parent.classList.remove('shop__cards_list');
+                num = 12;
+                parent.innerHTML = '';
+                createCard();
+            });
+        }
+    // });
 
-    function createCard(data) {
-        data.forEach(({src, title, rate, price, descr, category}, i) => {
+    function createCard() {
+        products.forEach(({src, title, rate, price, descr, category}, i) => {
             if (i < num) {
 
                 let card = document.createElement('div');
@@ -50,21 +148,21 @@ const showCard = (parentSelector, num = 12) => {
                 if (parent.classList.contains('shop__cards_list')) {
                     card.innerHTML = `
                         <div class="products__item-img" href="#">
-                                <a href="#">
+                                <a href="detalis.html">
                                     <img src=${src} alt="product">
                                 </a>
                             </div>
                             <div class="products__item-txt">
-                                <a href="#" class="products__item-title">
+                                <a href="detalis.html" class="products__item-title">
                                     <h3>${title}</h3>
                                 </a>
                                 <div class="stars stars_28" style="--rating: ${rate};" aria-label="Rating of this product is ${rate} out of 5."></div>
                                 <div class="products__item-price">$${price}</div>
-                                <a class="products__item-descr" href="#">
+                                <a class="products__item-descr" href="detalis.html">
                                     ${descr}
                                 </a>
                                 <div class="products__item-links">
-                                <a class="products__item-link" href="#">
+                                <a class="products__item-link" href="detalis.html">
                                     <svg width="20px" height="20px">
                                         <path fill="#A3BBC8"
                                         d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"/>
@@ -90,7 +188,7 @@ const showCard = (parentSelector, num = 12) => {
                         <div class="products__item-img">
                             <img src=${src} alt="product">
                             <div class="products__item-links">
-                                <a class="products__item-link" href="#">
+                                <a class="products__item-link" href="detalis.html">
                                     <svg width="20px" height="20px">
                                         <path fill="#A3BBC8"
                                         d="M19.450,19.448 C18.719,20.181 17.531,20.181 16.799,19.448 L12.211,14.860 C13.274,14.178 14.178,13.272 14.862,12.209 L19.450,16.798 C20.183,17.530 20.183,18.718 19.450,19.448 ZM7.500,14.999 C3.358,14.999 -0.000,11.640 -0.000,7.499 C-0.000,3.357 3.358,-0.002 7.500,-0.002 C11.642,-0.002 14.1000,3.357 14.1000,7.499 C14.1000,11.640 11.642,14.999 7.500,14.999 ZM7.500,1.873 C4.398,1.873 1.875,4.397 1.875,7.499 C1.875,10.601 4.398,13.123 7.500,13.123 C10.602,13.123 13.125,10.601 13.125,7.499 C13.125,4.397 10.602,1.873 7.500,1.873 ZM4.375,7.499 L3.125,7.499 C3.125,5.087 5.088,3.123 7.500,3.123 L7.500,4.374 C5.777,4.374 4.375,5.776 4.375,7.499 Z"/>
