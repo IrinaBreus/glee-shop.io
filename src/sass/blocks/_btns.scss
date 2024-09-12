@@ -25,4 +25,21 @@
             content: url('../icons/arrow-white.svg');
         }
     }
+    &_form {
+        padding: 20px 52px;
+        border: none;
+        background: var(--bg-btn);
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .7s;
+        &:hover {
+            background: #536a76;
+        }
+        &::after {
+            content: none;
+        }
+    }
 }

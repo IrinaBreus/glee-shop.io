@@ -1,0 +1,115 @@
+.comments {
+    &__items {
+        margin-bottom: 70px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--second);
+    }
+    &__item {
+        display: grid;
+        grid-template: repeat(3, max-content) / max-content 1fr max-content;
+        gap: 26px 32px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    &__img {
+        grid-area: 1 / 1 / 4 / 2;
+        width: 100px;
+        height: 100px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__name {
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--second);
+    }
+    &__stars {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    &__comment {
+        grid-area: 2 / 2 / 3 / 4;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+    }
+    &__reply {
+        grid-area: 3 / 2 / 4 / 3;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #516278;
+        display: flex;
+        align-items: center;
+        &::after {
+            content: url('../../icons/reply.svg');
+            margin-left: 6px;
+        }
+    }
+    &__date {
+        grid-area: 3 / 3 / 4 / 4;
+        font-size: 14px;
+        font-weight: 400;
+        color: #9e9e9e;
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 30px;
+        margin-bottom: 60px;
+    }
+    &__rating {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    &__label {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        &_1 {
+            &::after {
+                content: url('../../icons/name.svg');
+            }
+        }
+        &_2 {
+            &::after {
+                content: url('../../icons/mail.svg');
+            }
+        }
+        &_3 {
+            &::after {
+                content: url('../../icons/comment.svg');
+            }
+            grid-column: 1 / 3;
+        }
+    }
+    &__input {
+        padding: 19px 21px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+        border: 1px solid #999999;
+        &::placeholder {
+            color: #999999;
+        }
+        &:focus {
+            outline: 1px solid var(--bg-btn);
+        }
+        &_area {
+            height: 120px;
+        }
+    }
+    &__btn {
+        width: 190px;
+        padding: 20px 35px;
+    }
+}

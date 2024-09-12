@@ -53,7 +53,6 @@
     }
     
     // стилизация input type="number" - num & input + inputNumber.js
-
     &__num {
         height: 58px;
         max-width: 148px;
@@ -88,28 +87,62 @@
             display: none;
         }
     }
-
+    // 
+    
     &__form-btn {
-        padding: 20px 52px;
-        border-radius: 5px;
-        border: none;
-        background: var(--bg-btn);
-        color: var(--white);
-        font-size: 15px;
-        text-transform: uppercase;
         margin-left: 15px;
-        cursor: pointer;
-        transition: all .7s;
-        &:hover {
-            background: #536a76;
-        }
     }
     &__info-item {
         font-size: 16px;
         line-height: 30px;
         color: var(--main-txt);
     }
+
 }
+
+.detalis-tabs {
+    padding: 100px 0 60px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    &__link {
+        width: 240px;
+        height: 53px;
+        background: #edf1f4;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--main-txt);
+        transition: all .7s;
+        cursor: pointer;
+        & + .detalis-tabs__link {
+            margin-left: 14px;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &:hover,
+        &_active {
+            background: var(--bg-btn);
+            color: var(--white);
+        }
+    }
+    &__descr {
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--main-txt);
+    }
+    &__btn {
+        width: 190px;
+    }
+}
+
 
 @keyframes fadeIn {
     from {

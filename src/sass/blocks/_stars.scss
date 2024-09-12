@@ -25,3 +25,34 @@
         }
     }
 }
+
+.full-stars {
+    text-align: left;
+}
+.full-stars .rating-group {
+    display: inline-flex;
+}
+.full-stars input {
+    position: absolute;
+    left: -100%;
+}
+.full-stars label {
+    margin: 0;
+    cursor: pointer;
+}
+.full-stars label svg {
+    margin: 2px;
+    height: 20px;
+    width: 20px;
+    fill: #ffcc00;
+    transition: fill 0.3s;
+}
+.full-stars input:checked ~ label svg {
+    fill: #d6d6d6;
+}
+.full-stars .rating-group:hover label svg {
+    fill: #ffcc00;
+}
+.full-stars .rating-group input:hover ~ label svg {
+    fill: #d6d6d6;
+}
