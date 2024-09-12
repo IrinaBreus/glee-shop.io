@@ -7,6 +7,8 @@ import detalisSlider from "./modules/detalisSlider";
 import inputNumber from "./modules/inputNumber";
 import doubleRangeSlider from "./modules/rangeSlider";
 import showCard from "./modules/showCard";
+import slider from "./modules/slider";
+import tabs from "./modules/tabs";
 import tabsFilter from "./modules/tabsFilter";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,4 +29,6 @@ tabsFilter('.products__tabs');
 tabsFilter('.new-design__tabs');
 detalisSlider();
 inputNumber();
+tabs();
+slider();
 });

@@ -1,5 +1,5 @@
 .detalis {
-    padding: 120px 0;
+    padding: 120px 0 0;
     &__info-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -143,6 +143,43 @@
     }
 }
 
+.detalis-slider {
+    padding-top: 40px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 44px;
+    }
+    &__btn {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #edf1f4;
+        border-radius: 5px;
+        background: transparent;
+        margin-left: 20px;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid var(--bg-btn);
+        }
+        &:active {
+            background: var(--bg);
+        }
+    }
+    &__content {
+        overflow: hidden;
+        padding: 30px;
+    }
+    &__field {
+        transition: all .7s;
+    }
+    &__item {
+        width: 250px;
+        &+ .detalis-slider__item {
+            margin-left: 30px;
+        }
+    }
+}
 
 @keyframes fadeIn {
     from {

@@ -3,6 +3,9 @@
     font-size: 36px;
     font-weight: 700;
     color: var(--black);
+    &_main {
+        color: var(--main-txt);
+    }
 }
 
 .mb60 {
