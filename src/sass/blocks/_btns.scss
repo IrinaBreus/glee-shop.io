@@ -25,6 +25,21 @@
             content: url('../icons/arrow-white.svg');
         }
     }
+    &_light {
+        border: 1px solid var(--bg-btn);
+        color: var(--bg-btn);
+        border-radius: 0;
+        &::after {
+            content: url('../icons/arrow-next.svg');
+        }
+        &:hover {
+            border: 1px solid #243f4d;
+            color: var(--second);
+            &::after {
+                content: url('../icons/arrow-dark.svg');
+            }
+        }
+    }
     &_form {
         padding: 20px 52px;
         border: none;
