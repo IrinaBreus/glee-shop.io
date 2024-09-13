@@ -51,36 +51,5 @@
             grid-template-columns: 1fr;
         }
     }
-    &__pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    &__pagination-page {
-        padding: 20px 36px;
-        border: 1px solid var(--bg-btn);
-        transition: all .7s;
-        & + .shop__pagination-page {
-            margin-left: 15px;
-        }
-        &:hover {
-            background: var(--bg-btn);
-            .shop__pagination-link {
-                color: var(--white);
-            }
-        }
-        
-    }
-    &__pagination-link {
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--main-txt);
-        transition: all .7s;
-    }
-}
-.shop__pagination-page_active {
-    background: var(--bg-btn);
-        .shop__pagination-link {
-            color: var(--white);
-        }
+    
 }

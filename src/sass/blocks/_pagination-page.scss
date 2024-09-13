@@ -1,0 +1,31 @@
+.pagination-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        padding: 20px 36px;
+        border: 1px solid var(--bg-btn);
+        transition: all .7s;
+        & + .pagination-page__item {
+            margin-left: 15px;
+        }
+        &:hover {
+            background: var(--bg-btn);
+            .pagination-page__link {
+                color: var(--white);
+            }
+        }  
+    }
+    &__link {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--main-txt);
+        transition: all .7s;
+    }
+}
+.pagination-page__item_active {
+background: var(--bg-btn);
+    .shop__pagination-link {
+        color: var(--white);
+    }
+}
